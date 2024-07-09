@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <!-- cabecera del encriptador -->
+    <header>
+    </header>
+
+    <!-- cuerpo del encriptador -->
+    <main>
+        <div class="contenedor">
+            <div class="Logo">
+                <img src="./assets/Logo.png" alt="Logo de alura latam" class="img">
+            </div>
+            <div class="texto">
+                <textarea class="texto__encriptar" placeholder="Ingrese el texto aqui" maxlength="500"
+                    id="area__texto"></textarea>
+                <p class="texto__encriptar__mensaje">
+                    <i class='bx bxs-info-circle bx-flip-vertical'></i>
+                    Solo letras minúsculas y sin acentos
+                </p>
+                <div class="botones">
+                    <button class="boton__encriptar" onclick="encriptarTexto()">
+                        Encriptar
+                    </button>
+                    <button class="boton__desencriptar" onclick="desencriptarTexto()">
+                        Desencriptar
+                    </button>
+                </div>
+            </div>
+            <div class="texto__encriptado" id="resultado">
+                <img src="./assets/Muñeco.png" alt="Muñeco" class="muneco">
+                <h2 class="texto__encriptado__titulo">Ningún mensaje fue encontrado</h2>
+                <p class="texto__encriptado__mensaje">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- pie de pagina del encriptador -->
+    <footer>
+        <div class="creador">
+            <p class="creador__nombre">&copy Creado por Alvaro Nicolas Peña Cobos</p>
+            <div class="creador__cuentas">
+                <a href="https://github.com/anicolaspc" target="_blank">
+                    <i class='bx bxl-github'></i>
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/alvaro-nicolas-299658188/" target="_blank">
+                    <i class='bx bxl-linkedin-square'></i>
+                    Linkedin
+                </a>
+            </div>
+        </div>
+
+    </footer>
+    <script src="funciones.js"></script>
+</body>
+
+
+</html>
